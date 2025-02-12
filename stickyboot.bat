@@ -1,7 +1,7 @@
 @echo off
 :: Define Variables
-set SOURCE_FOLDER=C:\WindowsInstallerFiles
-set USB_DRIVE=E:
+set SOURCE_FOLDER=C:\win11_download
+set USB_DRIVE=D:
 
 :: Ensure running as administrator
 net session >nul 2>&1
