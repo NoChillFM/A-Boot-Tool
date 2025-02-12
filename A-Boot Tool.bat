@@ -58,7 +58,7 @@ echo exit
 :: /ZB    - Crash protection
 :: /NP    Disabled- No progress display
 echo Copying Windows installation files...
-robocopy "%SOURCE_FOLDER%" "%USB_DRIVE%" /E /MT:16 /J /ZB
+robocopy "%SOURCE_FOLDER%" "%USB_DRIVE%" /E /MT:64 /J /ZB
 
 echo Making USB bootable...
 if exist "%USB_DRIVE%\boot\bootsect.exe" (
