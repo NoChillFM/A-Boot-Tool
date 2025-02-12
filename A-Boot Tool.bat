@@ -74,7 +74,7 @@ echo      That's what I'm talking a-boot!
 echo       $Boot tool locked and loaded$
 echo =========================================
 echo.
-set /p repeat="A-Boot it again? (Y/N): "
+set /p repeat="How a-boot another? (Y/N): "
 if /I "%repeat%"=="Y" goto START
 echo Exiting...
 pause
