@@ -56,9 +56,9 @@ echo exit
 :: /MT:   - Multithreading
 :: /J     - Large file handler
 :: /ZB    - Crash protection
-:: /NP    - No progress display (Speeds up transfer speeds)
+:: /NP    Disabled- No progress display
 echo Copying Windows installation files...
-robocopy "%SOURCE_FOLDER%" "%USB_DRIVE%" /E /MT:256 /J /ZB /NP
+robocopy "%SOURCE_FOLDER%" "%USB_DRIVE%" /E /MT:16 /J /ZB
 
 echo Making USB bootable...
 if exist "%USB_DRIVE%\boot\bootsect.exe" (
