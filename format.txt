@@ -1,7 +1,0 @@
-select volume D
-clean
-create partition primary
-format fs=ntfs quick
-assign letter=D
-active
-exit
