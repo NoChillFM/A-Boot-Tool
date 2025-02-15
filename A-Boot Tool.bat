@@ -1,4 +1,5 @@
 @echo off
+::Change the below to the folder path of your installation media
 set SOURCE_FOLDER=C:\WindowsInstallerFiles
 set SOURCE_FOLDER=%SOURCE_FOLDER%
 set USB_DRIVE=%USB_DRIVE%:
@@ -31,7 +32,6 @@ if not exist "%USB_DRIVE%" (
 echo.
 echo %USB_DRIVE% selected
 set /p confirm="Is this the correct drive? (Y/N): "
-::Why can't normal functions just work :(
 if /I not "%confirm%"=="Y" (
     echo Operation canceled.
     pause
@@ -79,14 +79,3 @@ if /I "%repeat%"=="Y" goto START
 echo Exiting...
 pause
 exit
-::      ====================
-::         Future changes
-::      ====================
-::   Third party copying tool if approved
-::   Integrate RMM folder
-::   Categorize .msi installers by community
-::    - Store RMM folder alongside win install folder
-::    - Copy RMM after boot media is created
-::      ========================
-::         Script Version 1.0
-::      ========================
